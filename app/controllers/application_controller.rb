@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
    end
       erb :error
       end
-
+end
 
     get '/account' do
       @current_user = User.find_by_id(session[:user_id])
